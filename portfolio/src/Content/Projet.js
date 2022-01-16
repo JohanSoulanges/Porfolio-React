@@ -13,8 +13,10 @@ const Projet = () => {
 
   return (
     <div ref={containerProjet} className="projet-overlay" id="projet">
-      <Categories />
-      <Menu />
+      <div className="projet-container">
+        <Categories />
+        <Menu />
+      </div>
     </div>
   );
 };

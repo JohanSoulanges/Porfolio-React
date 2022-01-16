@@ -5,7 +5,7 @@ import { useGlobalContext } from "../../Context/AppContext.js";
 const Formation = () => {
   const { showModal, setShowModal } = useGlobalContext();
   return (
-    <div>
+    <div className="comp-detail">
       {formation.map(({ id, text, image }) => {
         return (
           <button

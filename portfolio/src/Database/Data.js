@@ -13,6 +13,7 @@ import {
   SiReact,
   SiAngular,
   SiNodedotjs,
+  SiAdobephotoshop,
 } from "react-icons/si";
 import Dyma from "../Image/DYMA.png";
 import Ifocop from "../Image/IFOCOP.png";
@@ -23,7 +24,7 @@ export const projet = [
     langague: "javascript",
     name: "projet type javascript",
     image: Dyma,
-    desc: "un projet test",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
     urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
   },
@@ -32,7 +33,7 @@ export const projet = [
     langague: "react",
     name: "projet type react",
     image: Dyma,
-    desc: "un projet test",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
     urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
   },
@@ -41,7 +42,7 @@ export const projet = [
     langague: "agular",
     name: "projet type angular",
     image: Dyma,
-    desc: "un projet test",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
     urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
   },
@@ -50,22 +51,32 @@ export const projet = [
     langague: "C/C++",
     name: "projet type C/C++",
     image: Dyma,
-    desc: "un projet test",
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
     urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
   },
+  // {
+  //   id: 5,
+  //   langague: "C/C++",
+  //   name: "projet type C/C++",
+  //   image: Dyma,
+  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+  //   urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  //   urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  // },
 ];
 
 export const langague = [
   { id: 1, text: "HTML", icon: <SiHtml5 /> },
   { id: 2, text: "CSS", icon: <SiCss3 /> },
   { id: 3, text: "Javascript", icon: <SiJavascript /> },
+  { id: 4, text: "React", icon: <SiReact /> },
+  { id: 5, text: "Angular", icon: <SiAngular /> },
+  { id: 6, text: "NodeJS", icon: <SiNodedotjs /> },
 ];
 
-export const frameWork = [
-  { id: 1, text: "React", icon: <SiReact /> },
-  { id: 2, text: "Angular", icon: <SiAngular /> },
-  { id: 3, text: "NodeJS", icon: <SiNodedotjs /> },
+export const graphique = [
+  { id: 1, text: "Photoshop", icon: <SiAdobephotoshop /> },
 ];
 
 export const formation = [

@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import CompModal from "./Modal-Comp.js";
-import Langague from "./Comp/Langague.js";
-import Framework from "./Comp/Framework.js";
+import Programmation from "./Comp/Programmation.js";
+import Graphique from "./Comp/Graphique.js";
 import Formation from "./Comp/Formation.js";
 import { useGlobalContext } from "../Context/AppContext";
 import { motion } from "framer-motion";
@@ -36,19 +36,21 @@ const Comp = () => {
     };
   }, [scrolling]);
   return (
-    <div ref={refContainer} className="comp" id="comp">
-      <div className="comp-header">
-        <h1>Compétences</h1>
-      </div>
+    <div ref={refContainer} className="comp-overlay" id="comp">
       <div className="comp-container">
-        <h2>Langague</h2>
-        <Langague />
-        <h2>Framework et Librairie</h2>
-        <Framework />
-        <h2>Formation</h2>
-        <Formation />
+        <div className="comp-header">
+          <h1>Compétences</h1>
+        </div>
+        <div className="comp-items">
+          <h2>Programmation</h2>
+          <Programmation />
+          <h2>Outil Graphique</h2>
+          <Graphique />
+          {/* <h2>Formation</h2>
+          <Formation /> */}
+        </div>
       </div>
-      <CompModal />
+      {/* <CompModal /> */}
     </div>
   );
 };

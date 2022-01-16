@@ -18,10 +18,12 @@ const About = () => {
   });
 
   return (
-    <div className="about-container" id="about">
-      {index === 0 && <p>premier chapitre</p>}
-      {index === 1 && <p>deuxieme chapitre</p>}
-      {index === 2 && <p>troisieme chapitre</p>}
+    <div className="about-overlay" id="about">
+      <div className="about-container">
+        {index === 0 && <p>premier chapitre</p>}
+        {index === 1 && <p>deuxieme chapitre</p>}
+        {index === 2 && <p>troisieme chapitre</p>}
+      </div>
     </div>
   );
 };
