@@ -4,22 +4,28 @@ import emailjs from "@emailjs/browser";
 const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
+    if (
+      e.target.name.value !== "" &&
+      e.target.name.value.length >= 2 &&
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.email.value)
+    ) {
+      emailjs
+        .sendForm(
+          "service_11icnme",
+          "template_j16x3vw",
+          e.target,
+          "user_a7Y2EsYnydCGWgrqhjDdR"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
 
-    emailjs
-      .sendForm(
-        "service_11icnme",
-        "template_j16x3vw",
-        e.target,
-        "user_a7Y2EsYnydCGWgrqhjDdR"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
     e.target.reset();
   };
 
@@ -36,17 +42,27 @@ const Contact = () => {
         </div>
         <form className="contact-form" onSubmit={sendEmail}>
           <div className="form-detail">
-            {/* <label>Nom</label> */}
-            <input placeholder="Nom" type="text" name="name" />
-            {/* <label>Email</label> */}
-            <input placeholder="Email" type="email" name="email" />
-            {/* <label>Compagnie</label> */}
-            <input placeholder="Compagnie*" type="text" name="company" />
-            {/* <label>Numero</label> */}
-            <input placeholder="Numero*" type="text" name="phone" />
+            <div>
+              <input type="text" name="name" required />
+              <label>Nom</label>
+            </div>
+            <div>
+              <input type="email" name="email" required />
+              <label>Email</label>
+            </div>
+            {/* <div>
+              <input type="text" name="company" required />
+              <label>Compagnie*</label>
+            </div>
+            <div>
+              <input type="text" name="phone" required />
+              <label>Numero*</label>
+            </div> */}
           </div>
-          {/* <label>Message</label> */}
-          <textarea placeholder="Message" name="message" />
+          <div className="form-textarea">
+            <textarea name="message" required />
+            <label>Message</label>
+          </div>
           <input className="send" type="submit" value="Envoyer" />
         </form>
       </div>

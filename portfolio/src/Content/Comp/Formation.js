@@ -1,22 +1,26 @@
 import React from "react";
 import { formation } from "../../Database/Data.js";
-import { useGlobalContext } from "../../Context/AppContext.js";
 
 const Formation = () => {
-  const { showModal, setShowModal } = useGlobalContext();
   return (
-    <div className="comp-detail">
+    <div className="forma-detail">
       {formation.map(({ id, text, image }) => {
         return (
-          <button
-            key={id}
-            className="btn"
-            onClick={() => {
-              setShowModal(!showModal);
-            }}
-          >
+          <div key={id}>
             <img src={image} alt={`logo ${text}`} />
-          </button>
+            <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
+                obcaecati repellat mollitia veritatis, distinctio, est itaque
+                dolor tenetur vel eius soluta eaque minus molestiae officia
+                eligendi? Obcaecati facilis alias ratione, sit doloremque amet
+                atque quia ipsam nostrum vero, nulla labore dolore dolor
+                exercitationem non quis vitae tenetur. Voluptate, distinctio
+                quibusdam?
+              </p>
+              <a href="">Lien vers le site</a>
+            </div>
+          </div>
         );
       })}
     </div>

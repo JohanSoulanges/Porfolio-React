@@ -9,6 +9,7 @@ export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const [showNext, setShowNext] = useState(false);
   const [scrolling, setScrolling] = useState(0);
   const [projetTop, setProjetTop] = useState(0);
   const [homeTop, setHomeTop] = useState(0);
@@ -56,6 +57,8 @@ export const AppProvider = ({ children }) => {
         allLangague,
         menuItems,
         filterMenu,
+        showNext,
+        setShowNext,
       }}
     >
       {children}
