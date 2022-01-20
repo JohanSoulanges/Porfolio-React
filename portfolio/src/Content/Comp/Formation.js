@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { formation } from "../../Database/Data.js";
+import { useGlobalContext } from "../../Context/AppContext";
 
 const Formation = () => {
+  const [index, setIndex] = useState(1);
+  const { nextPage, prevPage } = useGlobalContext();
+
+  const finaFormation = formation.filter((items) => items.id === index);
+
   return (
     <div className="forma-detail">
-      {formation.map(({ id, text, image }) => {
+      {finaFormation.map(({ id, text, image }) => {
         return (
           <div key={id}>
             <img src={image} alt={`logo ${text}`} />
@@ -23,6 +29,8 @@ const Formation = () => {
           </div>
         );
       })}
+      <button onClick={() => nextPage(formation, index, setIndex)}>X</button>
+      <button onClick={() => prevPage(index, setIndex)}>Y</button>
     </div>
   );
 };

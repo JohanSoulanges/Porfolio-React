@@ -4,9 +4,9 @@ import { useGlobalContext } from "../Context/AppContext";
 const Home = () => {
   return (
     <main id="main">
-      <div className="band-top"></div>
+      {/* <div className="band-top"></div> */}
       <h1 className="title">develloppeur full stack JS</h1>
-      <div className="band-bottom"></div>
+      {/* <div className="band-bottom"></div> */}
     </main>
   );
 };

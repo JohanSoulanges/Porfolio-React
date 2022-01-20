@@ -55,15 +55,78 @@ export const projet = [
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
     urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
   },
-  // {
-  //   id: 5,
-  //   langague: "C/C++",
-  //   name: "projet type C/C++",
-  //   image: Dyma,
-  //   desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
-  //   urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
-  //   urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
-  // },
+  {
+    id: 5,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Ifocop,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 6,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Ifocop,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 7,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Ifocop,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 8,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Ifocop,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 9,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Dyma,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 10,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Dyma,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 11,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Dyma,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
+  {
+    id: 12,
+    langague: "C/C++",
+    name: "projet type C/C++",
+    image: Dyma,
+    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
+    urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+    urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
+  },
 ];
 
 export const langague = [
@@ -82,6 +145,12 @@ export const graphique = [
 export const formation = [
   { id: 1, text: "IFOCOP", image: Ifocop },
   { id: 2, text: "Dyma", image: Dyma },
+];
+
+export const about = [
+  { id: 1, text: "premier chapitre" },
+  { id: 2, text: "deuxieme chapitre" },
+  { id: 3, text: "troisieme chapitre" },
 ];
 
 export const links = [
