@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { formation } from "../../Database/Data.js";
+import { RiArrowRightSFill, RiArrowLeftSFill } from "react-icons/ri";
 import { useGlobalContext } from "../../Context/AppContext";
 
 const Formation = () => {
@@ -9,28 +10,32 @@ const Formation = () => {
   const finaFormation = formation.filter((items) => items.id === index);
 
   return (
-    <div className="forma-detail">
-      {finaFormation.map(({ id, text, image }) => {
+    <div className={index === 1 ? "forma-detail first" : "forma-detail"}>
+      {index > 1 && (
+        <button className="arrowLeft" onClick={() => prevPage(index, setIndex)}>
+          <RiArrowLeftSFill />
+        </button>
+      )}
+      {finaFormation.map(({ id, text, image, name }) => {
         return (
           <div key={id}>
-            <img src={image} alt={`logo ${text}`} />
+            <img className="logo" src={image} alt={`logo ${name}`} />
             <div>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id
-                obcaecati repellat mollitia veritatis, distinctio, est itaque
-                dolor tenetur vel eius soluta eaque minus molestiae officia
-                eligendi? Obcaecati facilis alias ratione, sit doloremque amet
-                atque quia ipsam nostrum vero, nulla labore dolore dolor
-                exercitationem non quis vitae tenetur. Voluptate, distinctio
-                quibusdam?
-              </p>
+              <h1>{name}</h1>
+              <p>{text}</p>
               <a href="">Lien vers le site</a>
             </div>
           </div>
         );
       })}
-      <button onClick={() => nextPage(formation, index, setIndex)}>X</button>
-      <button onClick={() => prevPage(index, setIndex)}>Y</button>
+      {index === formation.length || (
+        <button
+          className="arrowRight"
+          onClick={() => nextPage(formation, index, setIndex)}
+        >
+          <RiArrowRightSFill />
+        </button>
+      )}
     </div>
   );
 };

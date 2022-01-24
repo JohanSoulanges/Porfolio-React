@@ -10,7 +10,7 @@ const Sidebar = () => {
       {showSidebar && (
         <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>
           <div className="sidebar-header">
-            <img className="logo" src={logo} alt="" />
+            <img className="title" src={logo} alt="" />
             <button
               className="sidebar-toggle"
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}

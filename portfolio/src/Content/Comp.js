@@ -64,9 +64,7 @@ const Comp = () => {
             <div className="forma-header">
               <h1>Formation</h1>
             </div>
-            <div className="forma-items">
-              <Formation />
-            </div>
+            <Formation />
             <button onClick={() => setShowNext(!showNext)}>
               <AiOutlineArrowLeft style={{ paddingTop: "0.5rem" }} />{" "}
               Compétences

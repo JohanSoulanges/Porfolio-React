@@ -5,13 +5,17 @@ const AppContext = React.createContext();
 
 const allLangague = ["all", ...new Set(projet.map((items) => items.langague))];
 
+console.log(allLangague[4]);
+
 export const AppProvider = ({ children }) => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   const [showModal, setShowModal] = useState(false);
   const [showNext, setShowNext] = useState(false);
+  const [navVisible, setNavVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
-  const [selectedCategorie, setSelectedCategorie] = useState(null);
+  const [selectedCategorie, setSelectedCategorie] = useState(0);
+  const [maxPage, setMaxpage] = useState(null);
   const [scrolling, setScrolling] = useState(0);
   const [projetTop, setProjetTop] = useState(0);
   const [homeTop, setHomeTop] = useState(0);
@@ -19,8 +23,10 @@ export const AppProvider = ({ children }) => {
   const [menuPage, setMenuPage] = useState(0);
   const [mult, setMult] = useState(0);
   const [menuItems, setMenuItems] = useState(
-    projet.filter((items) => items.id > 0 && items.id <= 4)
+    projet.filter((items, i) => i >= 0 && i < 4)
   );
+
+  console.log(maxPage);
 
   const projetsSmooth = () => {
     let scroll = window.scrollY;
@@ -34,36 +40,73 @@ export const AppProvider = ({ children }) => {
 
   const filterMenu = (langague) => {
     if (langague === "all") {
-      setMenuItems(projet);
+      setMenuItems(projet.filter((items) => items.id > 0 && items.id <= 4));
+      setMult(0);
+      if (projet.length <= 4) {
+        setMaxpage(1);
+      } else {
+        setMaxpage(null);
+      }
       return;
     }
     const newItems = projet.filter((items) => items.langague === langague);
+    setMenuItems(newItems.filter((items, i) => i >= 0 && i < 4));
+    setMult(0);
     console.log(newItems);
-    setMenuItems(newItems);
+    if (newItems.length <= 4) {
+      setMaxpage(1);
+    } else {
+      setMaxpage(null);
+    }
   };
 
   const selectMenuPageUp = (array) => {
-    const maxMult = array.length / 4;
-    const valeur = [4 * (mult + 1), 4 * (mult + 2)];
-    const arrayFinal = array.filter(
-      (items) => items.id > valeur[0] && items.id <= valeur[1]
-    );
-    console.log(valeur);
-    setMenuItems(arrayFinal);
-    if (mult < maxMult - 1) {
-      setMult(mult + 1);
+    let maxMult = Math.round(array.length / 4);
+    if (mult !== maxMult - 1) {
+      const valeur = [4 * (mult + 1), 4 * (mult + 2)];
+      if (selectedCategorie !== 0) {
+        const nextCategories = array.filter(
+          (items) => items.langague === allLangague[selectedCategorie]
+        );
+        const arrayFinal = nextCategories.filter(
+          (items, i) => i >= valeur[0] && i < valeur[1]
+        );
+        maxMult = Math.round(nextCategories.length / 4);
+        setMaxpage(maxMult);
+        setMenuItems(arrayFinal);
+        setMult(mult + 1);
+        console.log(maxMult);
+      } else {
+        console.log("not categoreis");
+        const arrayFinal = array.filter(
+          (items, i) => i >= valeur[0] && i < valeur[1]
+        );
+        setMaxpage(maxMult);
+        setMenuItems(arrayFinal);
+        setMult(mult + 1);
+      }
     }
   };
 
   const selectMenuPageDown = (array) => {
-    const valeur = [4 * (mult - 1), 4 * mult];
-    const arrayFinal = array.filter(
-      (items) => items.id > valeur[0] && items.id <= valeur[1]
-    );
-    console.log(valeur);
-    setMenuItems(arrayFinal);
-    if (mult >= 0) {
-      setMult(mult - 1);
+    if (mult > 0) {
+      const valeur = [4 * (mult - 1), 4 * mult];
+      if (selectedCategorie !== 0) {
+        const nextCategories = array.filter(
+          (items) => items.langague === allLangague[selectedCategorie]
+        );
+        const arrayFinal = nextCategories.filter(
+          (items, i) => i >= valeur[0] && i < valeur[1]
+        );
+        setMenuItems(arrayFinal);
+        setMult(mult - 1);
+      } else {
+        const arrayFinal = array.filter(
+          (items, i) => i >= valeur[0] && i < valeur[1]
+        );
+        setMenuItems(arrayFinal);
+        setMult(mult - 1);
+      }
     }
   };
 
@@ -114,6 +157,10 @@ export const AppProvider = ({ children }) => {
         selectMenuPageDown,
         nextPage,
         prevPage,
+        navVisible,
+        setNavVisible,
+        maxPage,
+        mult,
       }}
     >
       {children}

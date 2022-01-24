@@ -75,8 +75,8 @@ export const projet = [
   },
   {
     id: 7,
-    langague: "C/C++",
-    name: "projet type C/C++",
+    langague: "javascript",
+    name: "projet type javascript",
     image: Ifocop,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
@@ -84,8 +84,8 @@ export const projet = [
   },
   {
     id: 8,
-    langague: "C/C++",
-    name: "projet type C/C++",
+    langague: "react",
+    name: "projet type react",
     image: Ifocop,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
@@ -111,8 +111,8 @@ export const projet = [
   },
   {
     id: 11,
-    langague: "C/C++",
-    name: "projet type C/C++",
+    langague: "react",
+    name: "projet type react",
     image: Dyma,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
@@ -122,7 +122,7 @@ export const projet = [
     id: 12,
     langague: "C/C++",
     name: "projet type C/C++",
-    image: Dyma,
+    image: Ifocop,
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex et dicta commodi adipisci cum neque omnis necessitatibus nisi est molestias!",
     urlWeb: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
     urlGit: "https://developer.mozilla.org/fr/docs/Web/CSS/CSS_Grid_Layout",
@@ -143,8 +143,18 @@ export const graphique = [
 ];
 
 export const formation = [
-  { id: 1, text: "IFOCOP", image: Ifocop },
-  { id: 2, text: "Dyma", image: Dyma },
+  {
+    id: 1,
+    name: "IFOCOP",
+    image: Ifocop,
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti error optio molestiae eos doloremque. Ducimus unde porro soluta pariatur, cum quam nisi consequatur eveniet commodi sunt, inventore rem laudantium eligendi quas perferendis incidunt culpa nostrum temporibus expedita vero adipisci nobis, aliquam natus sapiente. Nemo minus esse placeat earum non eius nulla dolorem ex, voluptates magni quasi dolores officiis optio cum. Ipsam omnis deleniti reprehenderit officiis consectetur esse illum quaerat similique, quia accusamus ullam placeat voluptates harum incidunt suscipit fugit inventore quos iste aliquid. Libero placeat asperiores blanditiis sit expedita, enim eveniet maxime quam. Ex et harum nam optio maxime officia eum rerum, aut esse ratione. Quo assumenda exercitationem eveniet tempora accusantium hic laboriosam blanditiis ipsam ad iure, voluptatem repellendus harum neque explicabo aliquam tempore perferendis cumque vero. Incidunt esse aperiam rem assumenda porro laboriosam modi a sequi voluptas dolorem, odio delectus? Pariatur ratione, ut sint quam nam modi laboriosam deserunt eius amet quae expedita maiores atque, ea alias commodi recusandae voluptas eveniet in suscipit quisquam culpa illum praesentium. Vitae corrupti tempora facere praesentium repudiandae, harum totam dolorem. Reiciendis et velit itaque ex suscipit asperiores voluptatibus officiis architecto. Eaque sit nesciunt voluptatibus vero, praesentium minus cumque similique natus atque. Aliquam provident sed dolores doloremque voluptas earum possimus at, qui, repellat voluptatibus pariatur sint nostrum itaque sapiente nisi quo perferendis saepe asperiores sequi, et nemo ab ex! Ipsum soluta dolor repellendus sint voluptas quibusdam eum,",
+  },
+  {
+    id: 2,
+    name: "Dyma",
+    image: Dyma,
+    text: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti error optio molestiae eos doloremque. Ducimus unde porro soluta pariatur, cum quam nisi consequatur eveniet commodi sunt, inventore rem laudantium eligendi quas perferendis incidunt culpa nostrum temporibus expedita vero adipisci nobis, aliquam natus sapiente. Nemo minus esse placeat earum non eius nulla dolorem ex, voluptates magni quasi dolores officiis optio cum. Ipsam omnis deleniti reprehenderit officiis consectetur esse illum quaerat similique, quia accusamus ullam placeat voluptates harum incidunt suscipit fugit inventore quos iste aliquid. Libero placeat asperiores blanditiis sit expedita, enim eveniet maxime quam. Ex et harum nam optio maxime officia eum rerum, aut esse ratione. Quo assumenda exercitationem eveniet tempora accusantium hic laboriosam blanditiis ipsam ad iure, voluptatem repellendus harum neque explicabo aliquam tempore perferendis cumque vero. Incidunt esse aperiam rem assumenda porro laboriosam modi a sequi voluptas dolorem, odio delectus? Pariatur ratione, ut sint quam nam modi laboriosam deserunt eius amet quae expedita maiores atque, ea alias commodi recusandae voluptas eveniet in suscipit quisquam culpa illum praesentium. Vitae corrupti tempora facere praesentium repudiandae, harum totam dolorem. Reiciendis et velit itaque ex suscipit asperiores voluptatibus officiis architecto. Eaque sit nesciunt voluptatibus vero, praesentium minus cumque similique natus atque. Aliquam provident sed dolores doloremque voluptas earum possimus at, qui, repellat voluptatibus pariatur sint nostrum itaque sapiente nisi quo perferendis saepe asperiores sequi, et nemo ab ex! Ipsum soluta dolor repellendus sint voluptas quibusdam eum, tenetur tempore repellat assumenda amet consequuntur eaque earum iste ratione odio. Officiis atque labore ut adipisci voluptas perspiciatis qui itaque, aut aliquid quisquam ea ipsam voluptatibus modi at. Sapiente eius, ducimus pariatur,",
+  },
 ];
 
 export const about = [

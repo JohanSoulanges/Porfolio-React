@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import logo from "../SVG/logo.svg";
 import { links, social } from "../Database/Data";
 import { useGlobalContext } from "../Context/AppContext";
 
 const Navbar = () => {
-  const { projetsSmooth } = useGlobalContext();
+  const { scrolling, navVisible, setNavVisible } = useGlobalContext();
+
+  useEffect(() => {
+    if (scrolling >= 500) {
+      setNavVisible(true);
+    } else {
+      setNavVisible(false);
+    }
+  }, [scrolling]);
   return (
     <>
-      <nav>
+      <nav className={navVisible ? "none" : ""} style={{ top: scrolling }}>
         <div className="nav-header">
           <img className="logo" src={logo} alt="logo" />
         </div>

@@ -8,14 +8,7 @@ import Menu from "./Projet/Menu";
 
 const Projet = () => {
   const containerProjet = useRef(null);
-  const {
-    setProjetTop,
-    isOpen,
-    menuPage,
-    setMenuPage,
-    selectMenuPageUp,
-    selectMenuPageDown,
-  } = useGlobalContext();
+  const { setProjetTop, isOpen, menuPage, setMenuPage } = useGlobalContext();
   useEffect(() => {
     setProjetTop(containerProjet.current.getBoundingClientRect().y);
   }, []);
@@ -31,8 +24,6 @@ const Projet = () => {
           <Categories />
           <Menu />
         </div>
-        <button onClick={() => selectMenuPageUp(projet)}>X</button>
-        <button onClick={() => selectMenuPageDown(projet)}>Y</button>
       </div>
     </div>
   );
