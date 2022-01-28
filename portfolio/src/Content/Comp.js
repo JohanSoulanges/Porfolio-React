@@ -1,77 +1,75 @@
-import React, { useRef, useEffect, useState } from "react";
-import CompModal from "./Modal-Comp.js";
-import Programmation from "./Comp/Programmation.js";
-import Graphique from "./Comp/Graphique.js";
-import Formation from "./Comp/Formation.js";
-import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
-import { useGlobalContext } from "../Context/AppContext";
-import { motion } from "framer-motion";
+import React from "react";
+import "../CSS/Comp.scss";
+import logoDev from "../images/3442344.png";
+import logoForma from "../images/3534031.png";
 
 const Comp = () => {
-  const {
-    scrolling,
-    setScrolling,
-    setShowSidebar,
-    setIsSidebarOpen,
-    homeTop,
-    setHomeTop,
-    showNext,
-    setShowNext,
-  } = useGlobalContext();
-  const refContainer = useRef(null);
-  useEffect(() => {
-    function handleScroll() {
-      const scroll = window.scrollY;
-      setScrolling(scroll);
-    }
-    setHomeTop(refContainer.current.getBoundingClientRect().y);
-    if (scrolling >= homeTop && scrolling >= 900) {
-      setShowSidebar(true);
-    } else {
-      setShowSidebar(false);
-      setIsSidebarOpen(false);
-    }
-
-    window.addEventListener("scroll", handleScroll, false);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll, false);
-    };
-  }, [scrolling]);
   return (
     <>
-      {!showNext && (
-        <div ref={refContainer} className="comp-overlay" id="comp">
-          <div className="comp-container">
-            <div className="comp-header">
-              <h1>Compétences</h1>
-            </div>
-            <div className="comp-items">
-              <h2>Programmation</h2>
-              <Programmation />
-              <h2>Outil Graphique</h2>
-              <Graphique />
-            </div>
-            <button onClick={() => setShowNext(!showNext)}>
-              Formation <AiOutlineArrowRight style={{ paddingTop: "0.6rem" }} />
-            </button>
-          </div>
+      <section className="main-container">
+        <div className="expert-header">
+          <h2 className="title color-bleu">Mon expertise</h2>
         </div>
-      )}
-      {showNext && (
-        <div ref={refContainer} className="forma-overlay" id="comp">
+        <div className="expert-container">
+          <div className="dev-container">
+            <span className="icone">
+              <img src={logoDev} alt="" />
+            </span>
+            <h3 className="color-bleu sub-title">Développement</h3>
+            <p className="">
+              Exemple de texte. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+            </p>
+            <h5 className="color-bleu inf-title">Langague Utiliser :</h5>
+            <blockquote className="bloc">
+              Html/CSS
+              <br />
+              Javascript
+              <br />
+              Angular
+              <br />
+              Node JS
+              <br />
+              React
+              <br />
+              Angular
+              <br />
+              ...
+            </blockquote>
+          </div>
           <div className="forma-container">
-            <div className="forma-header">
-              <h1>Formation</h1>
-            </div>
-            <Formation />
-            <button onClick={() => setShowNext(!showNext)}>
-              <AiOutlineArrowLeft style={{ paddingTop: "0.5rem" }} />{" "}
-              Compétences
-            </button>
+            <span className="icone">
+              <img src={logoForma} alt="" />
+            </span>
+            <h3 className="color-bleu sub-title">
+              <span>Expériences</span> et Formation
+            </h3>
+            <p className="">
+              Exemple de texte. Lorem ipsum dolor sit amet, consectetur
+              adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+            </p>
+            <h5 className="color-bleu inf-title">Expériences effectuer :</h5>
+            <blockquote className="bloc">
+              Licence MIPI :<br />
+              &nbsp;Initiation au langage informatique PYTHON
+              <br />
+              <br />
+              IFOCOP :<br />
+              Apprentisage du langague Javascript, Angular, React, NodeJS...
+              <br />
+              Perfection du langague HTML et CSS
+              <br />
+              Mise en place de divers project
+              <br />
+              <br />
+              Dyma :<br /> Initiation au langage Javascript, HTML et CSS
+              <br />
+              Mise en place de divers project
+              <br />
+            </blockquote>
           </div>
         </div>
-      )}
+      </section>
     </>
   );
 };

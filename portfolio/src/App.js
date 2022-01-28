@@ -1,22 +1,32 @@
 import React from "react";
-import Home from "./Content/Home";
+import HomeOld from "./Content/HomeOld";
 import Sidebar from "./Content/Sidebar";
-import Comp from "./Content/Comp";
-import Projet from "./Content/Projet";
+import CompOld from "./Content/CompOld";
+import ProjetOld from "./Content/ProjetOld";
 import About from "./Content/About";
 import Navbar from "./Content/Navbar";
 import Contact from "./Content/Contact";
+import Home from "./Content/Home";
+import Comp from "./Content/Comp";
+import Project from "./Content/Project";
+import Show from "./Content/Show";
+import Test from "./test";
 
 function App() {
   return (
     <>
-      <Navbar />
       <Home />
       <Comp />
-      <Projet />
+      <Project />
+      <Show />
+      <Test />
+      {/* <Navbar />
+      <HomeOld />
+      <CompOld />
+      <ProjetOld />
       <About />
       <Contact />
-      <Sidebar />
+      <Sidebar /> */}
     </>
   );
 }

@@ -1,13 +1,21 @@
 import React from "react";
-import { useGlobalContext } from "../Context/AppContext";
+import "../CSS/Home.scss";
 
 const Home = () => {
   return (
-    <main id="main">
-      {/* <div className="band-top"></div> */}
-      <h1 className="title">develloppeur full stack JS</h1>
-      {/* <div className="band-bottom"></div> */}
-    </main>
+    <>
+      <section className="home-section">
+        <div className="home-container">
+          <div className="home-image" />
+          <div className="home-block">
+            <h1 className="title color-bleu">You look for a devellopper</h1>
+            <button className="btn">
+              <a href="">Contact me</a>
+            </button>
+          </div>
+        </div>
+      </section>
+    </>
   );
 };
 

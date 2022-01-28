@@ -1,0 +1,101 @@
+.main-container-show {
+    background-color: white;
+}
+
+.detail-container {
+    position: absolute;
+    z-index: 10;
+    height: 45vh;
+    width: 25vw;
+    left: 16%;
+    top: 345%;
+    background-color: #e5e5e5;
+
+    &>h2 {
+        text-align: start;
+        margin: 1rem 0 3rem 1.7rem;
+        font-size: 2rem;
+    }
+
+    &>p {
+        text-align: start;
+        margin: 1rem 1.5rem 2rem 1.7rem;
+        font-size: 1.15rem;
+        line-height: 2rem;
+    }
+
+    &>button {
+        margin: 0 1.5rem 0 1.7rem;
+    }
+}
+
+.info-container {
+    margin-top: 12rem;
+    padding-bottom: 5rem;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto 22.5% 22.5% 22.5% auto;
+    grid-template-areas: "a b c d e";
+
+    &>div {
+        z-index: 10;
+        background-color: #e5e5e5;
+        padding-bottom: 2.5rem;
+
+        &>h5 {
+            margin-left: 1.5rem;
+        }
+
+        &>p {
+            margin: 0 2rem 0 1.5rem;
+            line-height: 2rem;
+        }
+    }
+}
+
+.client {
+    grid-area: b;
+}
+
+.tech {
+    grid-area: c;
+}
+
+.prob {
+    grid-area: d;
+}
+
+.svg-1 {
+    position: absolute;
+    height: 10rem;
+    width: 10rem;
+    left: 26%;
+    top: 305%;
+    z-index: 1;
+}
+
+.svg-2 {
+    position: absolute;
+    height: 20rem;
+    width: 20rem;
+    left: 68%;
+    top: 360%;
+    z-index: 1;
+}
+
+.svg-3 {
+    position: absolute;
+    height: 9rem;
+    width: 9rem;
+    left: 55%;
+    top: 390%;
+    z-index: 1;
+}
+
+.priviImg {
+    position: relative;
+    padding-top: 8rem;
+    width: fit-content;
+    left: 30%;
+    z-index: 2;
+}

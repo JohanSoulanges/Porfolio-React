@@ -6,7 +6,7 @@ import { projet } from "../Database/Data";
 import Categories from "./Projet/Categories";
 import Menu from "./Projet/Menu";
 
-const Projet = () => {
+const ProjetOld = () => {
   const containerProjet = useRef(null);
   const { setProjetTop, isOpen, menuPage, setMenuPage } = useGlobalContext();
   useEffect(() => {
@@ -29,4 +29,4 @@ const Projet = () => {
   );
 };
 
-export default Projet;
+export default ProjetOld;

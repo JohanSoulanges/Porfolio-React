@@ -1,0 +1,64 @@
+.main-container {
+    min-height: 100vh;
+    background-color: #ffffff;
+}
+
+.expert-header {
+    display: block;
+    text-align: center;
+    min-height: 14vh;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.expert-container {
+    display: grid;
+    grid-template-columns: 20% 30% 30% 20%;
+    grid-template-areas: "a b c d";
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.dev-container {
+    grid-area: b;
+
+    &>h3 {
+        margin: 1.5rem 0 2.5rem 0;
+    }
+
+    &>h5 {
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    &>p {
+        margin: 2.5rem 6rem 2.5rem 6rem;
+    }
+
+    &>.bloc {
+        border-left: 3px solid #2f4ace;
+        line-height: 1.5;
+    }
+}
+
+.forma-container {
+    grid-area: c;
+
+    &>h3 {
+        margin: 1.5rem 0 2.5rem 0;
+    }
+
+    &>h5 {
+        margin: 2.5rem 0 2.5rem 0;
+    }
+
+    &>p {
+        margin: 2.5rem 6rem 2.5rem 6rem;
+    }
+
+    &>.bloc {
+        padding-left: 2rem;
+        border-left: 3px solid #2f4ace;
+        line-height: 1.5;
+    }
+}

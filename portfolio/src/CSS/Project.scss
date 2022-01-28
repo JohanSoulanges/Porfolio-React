@@ -1,0 +1,105 @@
+.main-container {
+    max-height: 125vh;
+    padding-top: 1rem;
+    &>.title {
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+.catego-container {
+    display: grid;
+    grid-template-rows: 5% 15% 15% 15% 15% 15% 15% 5%;
+    grid-template-areas: "a b c d e f g h";
+    font-size: 1.2rem;
+}
+
+.catego-1 {
+    grid-area: b;
+}
+
+.catego-2 {
+    grid-area: c;
+}
+
+.catego-3 {
+    grid-area: d;
+}
+
+.project-container {
+    display: grid;
+    grid-template-columns: 50% 18% 18% auto;
+    grid-template-areas:
+        "a b c d"
+        "e f g h";
+
+    &>.project-block {
+        background-color: #e5e5e5;
+        margin: 1rem 0 0 1rem;
+        z-index: 10;
+
+        &>h2 {
+            text-align: center;
+            padding: 0 4rem 0 4rem;
+            font-size: 2rem;
+        }
+
+        &>p {
+            text-align: center;
+            padding: 1rem 5rem 1rem 5rem;
+            line-height: 1.5;
+
+        }
+    }
+}
+
+.project-1 {
+    grid-area: b;
+}
+
+.project-2 {
+    grid-area: c;
+}
+
+.project-3 {
+    grid-area: f;
+}
+
+.project-4 {
+    grid-area: g;
+}
+
+.nextImg {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    left: 85%;
+    bottom: 55rem;
+    z-index: 3;
+}
+
+.prevImg {
+    position: relative;
+    width: 5rem;
+    height: 5rem;
+    left: 12%;
+    bottom: 55rem;
+    z-index: 3;
+}
+
+.project-img {
+    position: relative;
+    left: 9rem;
+    bottom: 35rem;
+    width: 50%;
+    z-index: 2;
+}
+
+.svg-background {
+    position: relative;
+    left: 30%;
+    bottom: 80rem;
+    width: 60rem;
+    height: 60rem;
+    z-index: 1;
+}

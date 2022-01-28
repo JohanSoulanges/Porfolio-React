@@ -1,0 +1,24 @@
+.home-section {
+    min-height: 606px;
+}
+
+.home-container {
+    display: grid;
+    grid-template-columns: 60% 30%;
+}
+
+.home-image {
+    min-height: 606px;
+    background-image: url("../images/IMG_0407.JPG");
+    background-repeat: no-repeat;
+    background-size: 105%;
+    background-position: 0% 50%;
+}
+
+.home-block {
+    background-color: white;
+    font-size: 2.4rem;
+    text-align: center;
+    padding: 20% 7% 0 7%;
+
+}

@@ -1,0 +1,352 @@
+// global
+
+body{
+    margin:0 ;
+    padding: 0;
+    color: #111111;
+    background-color: #e5e5e5;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+}
+
+.btn {
+    height: 55px;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2f4ace;
+    &:hover {
+        background-color: #1a1a1a;
+    }
+    &:visited {
+        background-color: #1a1a1a;
+    }
+    & > a{
+        color: #ffffff;
+        font-size: 1.1rem;
+        font-weight: bolder;
+        text-decoration: none;
+    }
+    
+}
+
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.color-bleu {
+    color: #2f4ace;
+}
+
+.icone {
+    // border: solid springgreen;
+   & > img {
+       height: 5rem;
+       width: 5rem;
+   }
+}
+
+.inf-title {
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+
+.mid-title {
+    font-size: 1.7rem;
+    font-weight: 500;
+}
+
+.sub-title {
+    font-size: 2rem;
+}
+
+// home
+
+// .home-section {
+//     min-height: 606px;
+// }
+
+// .home-container {
+//     display: grid;
+//     grid-template-columns: 60% 30% ;
+// }
+
+// .home-image {
+//     min-height: 606px;
+//     background-image: url("images/IMG_0407.JPG");
+//     background-repeat: no-repeat;
+//     background-size: 105%;
+//     background-position: 0% 50%;
+// }
+
+// .home-block{
+//     background-color: white;
+//     font-size: 2.4rem;
+//     text-align: center;
+//     padding: 20% 7% 0 7%;
+    
+// }
+
+// expertise
+
+// .main-container {
+//     min-height: 100vh;
+//     background-color: #ffffff;
+// }
+
+// .expert-header{
+//     display: block;
+//     text-align: center;
+//     min-height: 14vh;
+//     padding-top: 1rem;
+//     padding-bottom: 1rem;
+//     font-size: 2rem;
+// }
+
+// .expert-container{
+//     display: grid;
+//     grid-template-columns: 20% 30% 30% 20%;
+//     grid-template-areas: "a b c d";
+//     text-align: center;
+//     margin-top: 1rem;
+// }
+
+// .dev-container {
+//     grid-area: b;
+//     & > h3{
+//         margin: 1.5rem 0 2.5rem 0;
+//     }
+//     & > h5{
+//         margin: 2.5rem 0 2.5rem 0;
+//     }
+//     & > p{
+//         margin: 2.5rem 6rem 2.5rem 6rem;
+//     }
+//     &>.bloc  {
+//         border-left: 3px solid #2f4ace;
+//         line-height: 1.5;
+//     }
+// }
+
+// .forma-container{
+//     grid-area: c;
+//     & > h3{
+//         margin: 1.5rem 0 2.5rem 0;
+//     }
+//     & > h5{
+//         margin: 2.5rem 0 2.5rem 0;
+//     }
+//     & >  p {
+//         margin: 2.5rem 6rem 2.5rem 6rem ;        
+//     }
+//     &>.bloc {
+//         padding-left: 2rem;
+//         border-left: 3px solid #2f4ace;
+//         line-height: 1.5;
+//     }
+// }
+
+// project
+
+// .main-container {
+//     max-height: 100vh ;
+//     padding-top: 1rem;
+//     & > .title {
+//         text-align: center;
+//         font-size: 3rem;
+//     }
+// }
+
+// .catego-container {
+//     display: grid;
+//     grid-template-rows: 5% 15% 15% 15% 15% 15% 15% 5%;
+//     grid-template-areas: "a b c d e f g h";
+//     font-size: 1.2rem;
+// }
+
+// .catego-1 {
+//     grid-area: b ;
+// }
+
+// .catego-2 {
+//     grid-area: c ;
+// }
+
+// .catego-3 {
+//     grid-area: d ;
+// }
+
+// .project-container {
+//     display: grid;
+//     grid-template-columns: 50% 18% 18% auto ;
+//     grid-template-areas: 
+//     "a b c d"
+//     "e f g h";
+//     & >.project-block{
+//         background-color: #ffffff;
+//         margin: 1rem 0 0 1rem;
+//         z-index: 10;
+//         & > h2 {
+//             text-align: center;
+//             padding: 0 4rem 0 4rem;
+//             font-size: 2rem;
+//         }
+//         & > p {
+//             text-align: center;
+//             padding: 1rem 5rem 1rem 5rem;
+//             line-height: 1.5;
+
+//         }
+//     }
+// }
+
+// .project-1 {
+//     grid-area: b ;
+// }
+
+// .project-2 {
+//     grid-area: c ;
+// }
+
+// .project-3 {
+//     grid-area: f ;
+// }
+
+// .project-4 {
+//     grid-area: g;
+// }
+
+// .nextImg{
+//     position: relative;
+//     width: 5rem;
+//     height: 5rem;
+//     left: 85%;
+//     bottom: 55rem;
+//     z-index: 3;
+// }
+
+// .prevImg{
+//     position: relative;
+//     width: 5rem;
+//     height: 5rem;
+//     left: 12%;
+//     bottom: 55rem;
+//     z-index: 3;
+// }
+
+// .project-img {
+//     position: relative;
+//     left: 9rem;
+//     bottom: 35rem;
+//     width: 50%;
+//     z-index: 2;
+// }
+
+// .svg-background {
+//     position: relative;
+//     left: 30%;
+//     bottom: 80rem;
+//     width: 60rem;
+//     height: 60rem;
+//     z-index: 1;
+// }
+
+// Show One Project
+
+// .main-container-show {
+//     background-color: white;
+// }
+
+// .detail-container {
+//     position: absolute;
+//     z-index: 10;
+//     height: 45vh;
+//     width: 25vw;
+//     left: 16%;
+//     top: 345%;
+//     background-color: #e5e5e5;
+//     & > h2 {
+//         text-align: start;
+//         margin: 1rem 0 3rem 1.7rem;
+//         font-size: 2rem;
+//     }
+//     & > p {
+//         text-align: start;
+//         margin: 1rem 1.5rem 2rem 1.7rem;
+//         font-size: 1.15rem;
+//         line-height: 2rem;
+//     }
+//     &>button{
+//         margin: 0 1.5rem 0 1.7rem;
+//     }
+// }
+
+// .info-container {
+//     margin-top: 12rem;
+//     padding-bottom: 5rem;
+//     height: fit-content;
+//     display: grid;
+//     grid-template-columns: auto 22.5% 22.5% 22.5% auto;
+//     grid-template-areas: "a b c d e";
+//     & > div {
+//         z-index: 10;
+//         background-color: #e5e5e5;
+//         padding-bottom: 2.5rem;
+//         & > h5 {
+//             margin-left: 1.5rem;
+//         }
+//         & > p {
+//             margin: 0 2rem 0 1.5rem;
+//             line-height: 2rem;
+//         }
+//     }
+// }
+
+// .client {
+//     grid-area: b;
+// }
+
+// .tech {
+//     grid-area: c;
+// }
+
+// .prob {
+//     grid-area: d;
+// }
+
+// .svg-1 {
+//     position: absolute;
+//     height: 10rem;
+//     width: 10rem;
+//     left: 26%;
+//     top: 305%;
+//     z-index: 1;
+// }
+
+// .svg-2 {
+//      position: absolute;
+//      height: 20rem;
+//      width: 20rem;
+//      left: 68%;
+//     top: 360%;
+//     z-index: 1;
+// }
+
+// .svg-3 {
+//      position: absolute;
+//    height: 9rem;
+//    width: 9rem;
+//     left: 55%;
+//     top: 390%;
+//     z-index: 1;
+// }
+
+// .priviImg {
+//      position: relative;
+//      padding-top: 8rem;
+//      width: fit-content;
+//      left: 30%;
+//     z-index: 2;
+// }
+
