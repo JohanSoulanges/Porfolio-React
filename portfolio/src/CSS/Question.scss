@@ -1,0 +1,43 @@
+.main-container-question {
+    background-color: #ffffff;
+    min-height: 100vh;
+    padding-bottom: 1rem;
+
+    &>.title {
+        text-align: center;
+        margin: 0;
+        padding: 3rem 0 3rem 0;
+        font-size: 3rem;
+    }
+}
+
+.question-container {
+    padding: 3rem 20rem 0 20rem;
+
+    &>div {
+        margin-bottom: 5rem;
+    }
+
+    &>div>a {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid black;
+        padding-bottom: 1rem;
+    }
+
+    &>div>a>.inf-title {
+        font-weight: 600;
+        padding-left: 2rem;
+    }
+
+    &>div>div>p {
+        padding-left: 2rem;
+    }
+}
+
+.fleche {
+    &>svg {
+        height: 2rem;
+        width: 2rem;
+    }
+}
