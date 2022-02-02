@@ -1,7 +1,33 @@
 import React from "react";
 import "../CSS/Contact.scss";
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
+  const sendEmail = (e) => {
+    e.preventDefault();
+    if (
+      e.target.name.value !== "" &&
+      e.target.name.value.length >= 2 &&
+      /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(e.target.email.value)
+    ) {
+      emailjs
+        .sendForm(
+          "service_11icnme",
+          "template_j16x3vw",
+          e.target,
+          "user_a7Y2EsYnydCGWgrqhjDdR"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
+    e.target.reset();
+  };
   return (
     <>
       <section className="main-container-contact">
@@ -51,51 +77,38 @@ const Contact = () => {
         </div>
         <div className="contact-container ">
           <div className="contact-info ">
-            <h2 className="">Contact us</h2>
-            <p className="">
+            <h2>Contact us</h2>
+            <p>
               3045 10 Sunrize Avenue, 123-456-7890
               <br />
               Mon – Fri: 9:00 am – 8:00 pm,
               <br />
               Sat – Sun: 9:00 am – 10 pm
               <br />
-              <a href="" className="" target="_blank">
+              <a href="" target="_blank">
                 contacts@esbnyc.com
               </a>
             </p>
           </div>
           <div className="input-container ">
-            <form
-              action="#"
-              method="POST"
-              className=""
-              source="custom"
-              name="form"
-            >
+            <form onSubmit={sendEmail}>
               <div className="input input-1">
-                <input type="text" name="name" className="" required />
-                <label htmlFor="name-3b9a" className="">
-                  Enter your Name
-                </label>
+                <input type="text" name="name" required />
+                <label>Enter your Name</label>
               </div>
               <div className="input input-2">
-                <input type="email" name="email" className="" required />
-                <label htmlFor="email-3b9a" className="">
-                  Enter a valid email address
-                </label>
+                <input type="email" name="email" required />
+                <label>Enter a valid email address</label>
               </div>
               <div className="input textarea">
                 <textarea
                   rows={6}
                   cols={50}
                   name="message"
-                  className=""
                   required
                   defaultValue={""}
                 />
-                <label htmlFor="message-3b9a" className="label-textarea">
-                  Enter your message
-                </label>
+                <label className="label-textarea">Enter your message</label>
               </div>
               {/* <div> */}
               <button className="submit">SUBMIT</button>

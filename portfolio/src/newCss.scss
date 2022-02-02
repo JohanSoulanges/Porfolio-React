@@ -1,74 +1,74 @@
-// global
+// // global
 
-body{
-    margin:0 ;
-    padding: 0;
-    color: #111111;
-    background-color: #e5e5e5;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 1rem;
-}
+// body{
+//     margin:0 ;
+//     padding: 0;
+//     color: #111111;
+//     background-color: #e5e5e5;
+//     font-family: 'Open Sans', sans-serif;
+//     font-size: 1rem;
+// }
 
-textarea:focus,
-input:focus {
-    outline: none;
-}
+// textarea:focus,
+// input:focus {
+//     outline: none;
+// }
 
-.btn {
-    height: 55px;
-    width: 150px;
-    border: none;
-    border-radius: 10px;
-    background-color: #2f4ace;
-    &:hover {
-        background-color: #1a1a1a;
-    }
-    &:visited {
-        background-color: #1a1a1a;
-    }
-    & > a{
-        color: #ffffff;
-        font-size: 1.1rem;
-        font-weight: bolder;
-        text-decoration: none;
-    }
+// .btn {
+//     height: 55px;
+//     width: 150px;
+//     border: none;
+//     border-radius: 10px;
+//     background-color: #2f4ace;
+//     &:hover {
+//         background-color: #1a1a1a;
+//     }
+//     &:visited {
+//         background-color: #1a1a1a;
+//     }
+//     & > a{
+//         color: #ffffff;
+//         font-size: 1.1rem;
+//         font-weight: bolder;
+//         text-decoration: none;
+//     }
     
-}
+// }
 
-.title{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-}
+// .title{
+//     font-family: 'Montserrat', sans-serif;
+//     font-weight: 800;
+// }
 
-.color-bleu {
-    color: #2f4ace;
-}
+// .color-bleu {
+//     color: #2f4ace;
+// }
 
-.icone {
-    // border: solid springgreen;
-   & > img {
-       height: 5rem;
-       width: 5rem;
-   }
-}
+// .icone {
+//     // border: solid springgreen;
+//    & > img {
+//        height: 5rem;
+//        width: 5rem;
+//    }
+// }
 
-.inf-title {
-    font-size: 1.3rem;
-    font-weight: lighter;
-}
+// .inf-title {
+//     font-size: 1.3rem;
+//     font-weight: lighter;
+// }
 
-.mid-title {
-    font-size: 1.7rem;
-    font-weight: 500;
-}
+// .mid-title {
+//     font-size: 1.7rem;
+//     font-weight: 500;
+// }
 
-.sub-title {
-    font-size: 2rem;
-}
+// .sub-title {
+//     font-size: 2rem;
+// }
 
-.none {
-    display: none;
-}
+// .none {
+//     display: none;
+// }
 
 // home
 

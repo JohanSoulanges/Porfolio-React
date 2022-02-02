@@ -1,6 +1,6 @@
 import React from "react";
 import { GrClose } from "react-icons/gr";
-import { useGlobalContext } from "../Context/AppContext";
+import { useGlobalContext } from "../../Context/AppContext";
 
 const CompModal = () => {
   const { showModal, setShowModal } = useGlobalContext();

@@ -1,6 +1,7 @@
 .main-container {
     max-height: 125vh;
     padding-top: 1rem;
+    padding-bottom: 1rem;
     &>.title {
         text-align: center;
         font-size: 3rem;
@@ -12,18 +13,35 @@
     grid-template-rows: 5% 15% 15% 15% 15% 15% 15% 5%;
     grid-template-areas: "a b c d e f g h";
     font-size: 1.2rem;
+    & > button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        font-family: 'Open Sans',sans-serif;
+    }
 }
 
-.catego-1 {
+.catego-0 {
     grid-area: b;
 }
 
-.catego-2 {
+.catego-1 {
     grid-area: c;
 }
 
-.catego-3 {
+.catego-2 {
     grid-area: d;
+}
+
+.catego-3 {
+    grid-area: e;
+}
+
+.catego-4 {
+    grid-area: f;
+}
+
+.catego-5 {
+    grid-area: g;
 }
 
 .project-container {
@@ -38,67 +56,67 @@
         margin: 1rem 0 0 1rem;
         z-index: 10;
 
-        &>h2 {
+        &>button >h2 {
             text-align: center;
-            padding: 0 4rem 0 4rem;
-            font-size: 2rem;
+            padding: 0 3.9rem 0 3.9rem;
+            font-size: 1.95rem;
         }
 
-        &>p {
+        &>button>p {
             text-align: center;
             padding: 1rem 5rem 1rem 5rem;
             line-height: 1.5;
-
+            font-size: 1rem;
         }
     }
 }
 
-.project-1 {
+.project-0 {
     grid-area: b;
 }
 
-.project-2 {
+.project-1 {
     grid-area: c;
 }
 
-.project-3 {
+.project-2 {
     grid-area: f;
 }
 
-.project-4 {
+.project-3 {
     grid-area: g;
 }
 
 .nextImg {
-    position: relative;
+    position: absolute;
     width: 5rem;
     height: 5rem;
-    left: 85%;
-    bottom: 55rem;
+    left: 87%;
+    top: 130rem;
     z-index: 3;
 }
 
 .prevImg {
-    position: relative;
+    position: absolute;
     width: 5rem;
     height: 5rem;
     left: 12%;
-    bottom: 55rem;
+    top: 130rem;
     z-index: 3;
 }
 
 .project-img {
-    position: relative;
-    left: 9rem;
-    bottom: 35rem;
+    position: absolute;
+    left: 22rem;
+    top: 120rem;
     width: 50%;
     z-index: 2;
 }
 
 .svg-background {
-    position: relative;
+    position: absolute;
     left: 30%;
-    bottom: 80rem;
+    top: 115rem;
     width: 60rem;
     height: 60rem;
     z-index: 1;

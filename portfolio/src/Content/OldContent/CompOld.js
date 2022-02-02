@@ -1,10 +1,10 @@
 import React, { useRef, useEffect, useState } from "react";
 import CompModal from "./Modal-Comp.js";
-import Programmation from "./Comp/Programmation.js";
-import Graphique from "./Comp/Graphique.js";
-import Formation from "./Comp/Formation.js";
+import Programmation from "../Comp/Programmation.js";
+import Graphique from "../Comp/Graphique.js";
+import Formation from "../Comp/Formation.js";
 import { AiOutlineArrowRight, AiOutlineArrowLeft } from "react-icons/ai";
-import { useGlobalContext } from "../Context/AppContext";
+import { useGlobalContext } from "../../Context/AppContext";
 import { motion } from "framer-motion";
 
 const CompOld = () => {

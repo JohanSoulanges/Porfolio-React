@@ -5,10 +5,10 @@
 .detail-container {
     position: absolute;
     z-index: 10;
-    height: 45vh;
     width: 25vw;
     left: 16%;
-    top: 345%;
+    top: 320%;
+    padding-bottom: 2rem;
     background-color: #e5e5e5;
 
     &>h2 {
@@ -30,22 +30,22 @@
 }
 
 .info-container {
-    margin-top: 12rem;
+    margin-top: 5rem;
     padding-bottom: 5rem;
-    height: fit-content;
     display: grid;
     grid-template-columns: auto 22.5% 22.5% 22.5% auto;
     grid-template-areas: "a b c d e";
-
+    
     &>div {
         z-index: 10;
         background-color: #e5e5e5;
+        margin-left: 1rem;
         padding-bottom: 2.5rem;
-
+        
         &>h5 {
             margin-left: 1.5rem;
         }
-
+        
         &>p {
             margin: 0 2rem 0 1.5rem;
             line-height: 2rem;

@@ -5,9 +5,13 @@ const AppContext = React.createContext();
 
 const allLangague = ["all", ...new Set(projet.map((items) => items.langague))];
 
-console.log(allLangague[4]);
+// console.log(allLangague[4]);
 
 export const AppProvider = ({ children }) => {
+  const [isShowAnswer1, setIsShowAnswer1] = useState(false);
+  const [isShowAnswer2, setIsShowAnswer2] = useState(false);
+  const [isShowAnswer3, setIsShowAnswer3] = useState(false);
+  const [isShowAnswer4, setIsShowAnswer4] = useState(false);
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [showSidebar, setShowSidebar] = useState(false);
   const [showModal, setShowModal] = useState(false);
@@ -15,6 +19,7 @@ export const AppProvider = ({ children }) => {
   const [navVisible, setNavVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
   const [selectedCategorie, setSelectedCategorie] = useState(0);
+  const [showProjet, setshowProjet] = useState(null);
   const [maxPage, setMaxpage] = useState(null);
   const [scrolling, setScrolling] = useState(0);
   const [projetTop, setProjetTop] = useState(0);
@@ -110,6 +115,12 @@ export const AppProvider = ({ children }) => {
     }
   };
 
+  const selectedProjet = (target) => {
+    const select = projet.filter((items) => items.id === target);
+    console.log(select);
+    setshowProjet(select);
+  };
+
   const nextPage = (array, index, setIndex) => {
     const maxValeur = array.length;
     if (index < maxValeur) {
@@ -161,6 +172,17 @@ export const AppProvider = ({ children }) => {
         setNavVisible,
         maxPage,
         mult,
+        isShowAnswer1,
+        setIsShowAnswer1,
+        isShowAnswer2,
+        setIsShowAnswer2,
+        isShowAnswer3,
+        setIsShowAnswer3,
+        isShowAnswer4,
+        setIsShowAnswer4,
+        selectedProjet,
+        showProjet,
+        setshowProjet,
       }}
     >
       {children}

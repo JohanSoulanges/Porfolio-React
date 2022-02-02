@@ -3,8 +3,8 @@ import { useRef } from "react/cjs/react.development";
 import { useGlobalContext } from "../Context/AppContext";
 import { LayoutGroup, motion } from "framer-motion";
 import { projet } from "../Database/Data";
-import Categories from "./Projet/Categories";
-import Menu from "./Projet/Menu";
+import Categories from "../Projet/Categories";
+import Menu from "../Projet/Menu";
 
 const ProjetOld = () => {
   const containerProjet = useRef(null);

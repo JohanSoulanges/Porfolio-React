@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { useState } from "react/cjs/react.development";
-import { useGlobalContext } from "../Context/AppContext";
-import { about } from "../Database/Data";
+import { useGlobalContext } from "../../Context/AppContext";
+import { about } from "../../Database/Data";
 
 const About = () => {
   const [index, setIndex] = useState(1);

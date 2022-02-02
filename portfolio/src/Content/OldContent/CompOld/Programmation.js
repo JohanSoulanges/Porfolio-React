@@ -1,5 +1,5 @@
 import React from "react";
-import { langague } from "../../Database/Data.js";
+import { langague } from "../../../Database/Data.js";
 
 const Programmation = () => {
   return (

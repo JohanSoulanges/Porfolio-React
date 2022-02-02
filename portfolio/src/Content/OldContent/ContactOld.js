@@ -25,7 +25,6 @@ const ContactOld = () => {
           }
         );
     }
-
     e.target.reset();
   };
 
@@ -50,14 +49,6 @@ const ContactOld = () => {
               <input type="email" name="email" required />
               <label>Email</label>
             </div>
-            {/* <div>
-              <input type="text" name="company" required />
-              <label>Compagnie*</label>
-            </div>
-            <div>
-              <input type="text" name="phone" required />
-              <label>Numero*</label>
-            </div> */}
           </div>
           <div className="form-textarea">
             <textarea name="message" required />

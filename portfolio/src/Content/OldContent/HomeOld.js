@@ -1,5 +1,5 @@
 import React from "react";
-import { useGlobalContext } from "../Context/AppContext";
+import { useGlobalContext } from "../../Context/AppContext";
 
 const HomeOld = () => {
   return (
