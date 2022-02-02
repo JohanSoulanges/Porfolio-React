@@ -6,7 +6,7 @@ import logoForma from "../images/3534031.png";
 const Comp = () => {
   return (
     <>
-      <section className="main-container">
+      <section className="main-container-comp">
         <div className="expert-header">
           <h2 className="title color-bleu">Mon expertise</h2>
         </div>

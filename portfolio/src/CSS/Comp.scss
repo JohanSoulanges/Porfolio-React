@@ -1,4 +1,4 @@
-.main-container {
+.main-container-comp {
     min-height: 100vh;
     background-color: #ffffff;
 }
@@ -60,5 +60,44 @@
         padding-left: 2rem;
         border-left: 3px solid #2f4ace;
         line-height: 1.5;
+    }
+}
+
+@media screen and (max-width:820px) and (max-height:1180px) {
+    .expert-container {
+        grid-template-columns: 15% 35% 35% 15%;
+    }
+
+    .dev-container {
+        &>h5 {
+            font-size: 1.5rem;
+            padding-top: 2.7rem;
+        }
+        
+        &>p {
+            margin: 2.5rem 3rem 2.5rem 3rem;
+            font-size: 1.3rem;
+        }
+        
+        &>.bloc {
+            font-size: 1.3rem;
+        }
+    }
+
+    .forma-container {
+        &>h5 {
+            font-size: 1.5rem;
+        }
+
+        &>p {
+            margin: 2.5rem 3rem 2.5rem 3rem;
+            font-size: 1.3rem;
+        }
+
+        &>.bloc {
+            width: 100%;
+            padding-left: 1rem;
+            font-size: 1.3rem;
+        }
     }
 }

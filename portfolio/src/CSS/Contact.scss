@@ -99,8 +99,6 @@
 }
 
 .contact-svg-1 {
-
-    // display: none;
     &>svg {
         height: 40rem;
         width: 42rem;
@@ -116,5 +114,65 @@
         left: 35%;
         transform: rotate(10);
         position: absolute;
+    }
+}
+
+@media screen and (max-width:1350px) and (max-height:800px) {
+    .contact-container {
+        left: 20%;
+    }
+
+    .contact-svg-1 {
+        &>svg {
+            height: 35rem;
+            width: 37rem;
+            left: 25%;
+            position: absolute;
+        }
+    }
+
+    .contact-svg-2 {
+        &>svg {
+            height: 35rem;
+            width: 37rem;
+            left: 35%;
+            transform: rotate(10);
+        }
+    }
+}
+
+@media screen and (max-width:820px) and (max-height:1180px) {
+    .main-container-contact {
+        background-color: #ffffff;
+        padding-bottom: 12rem;
+        padding-top: 1rem;
+    }
+    .contact-container {
+        // display: none;
+        width: auto;
+        height: auto;
+        left: 0%;
+        &>.contact-info {
+            margin: 1rem 1rem 1rem 2rem;
+        }
+    }
+    .contact-svg-1 {
+        // display: none;
+        &>svg {
+            height: 25rem;
+            width: 27rem;
+            left: 5%;
+            position: absolute;
+        }
+    }
+
+    .contact-svg-2 {
+        // display: none;
+        &>svg {
+            height: 25rem;
+            width: 27rem;
+            left: 15%;
+            transform: rotate(10);
+        }
     }
 }
