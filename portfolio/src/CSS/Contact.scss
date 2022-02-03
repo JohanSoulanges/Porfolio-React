@@ -179,13 +179,33 @@
         height: auto;
        
         &>.contact-info {
-            margin: 2.5rem 1rem 1rem 2rem;
+            margin: 2.5rem 1rem 0rem 2rem;
         }
 
         &>.input-container {
-            margin: 3rem 2rem 3.5rem 2rem;
+            margin: 0rem 2rem 3.5rem 2rem;
         }
 
     }
 }
 
+@media screen and (max-width:950px) {
+    .contact-container {
+        position: relative;
+        width: 40vh;
+        height: auto;
+        left: 25%;
+
+    }
+    .contact-svg-1 {
+        &>svg {
+            display: none;
+        }
+    }
+
+    .contact-svg-2 {
+        &>svg {
+            display: none;
+        }
+    }
+}

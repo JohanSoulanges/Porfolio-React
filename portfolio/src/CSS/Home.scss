@@ -34,11 +34,29 @@
 
 }
 
-@media screen and (max-width:900px)  {
+@media screen and (max-width:950px)  {
    .home-block {
        font-size: 1.6rem;
    }
    .home-image {
        background-position: 20% 50%;
    }
+}
+
+@media screen and (max-width:750px) {
+    .home-container {
+        grid-template-columns: none;
+        grid-template-rows: 40% 60%;
+        grid-template-areas: "a"
+                             "b";
+    }
+    .home-block {
+        grid-area: a;
+    }
+    .home-image {
+        grid-area: b;
+    }
+    .home-section {
+        padding-bottom: 10rem;
+    }
 }

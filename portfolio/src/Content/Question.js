@@ -6,9 +6,7 @@ const Question = () => {
   return (
     <>
       <section className="main-container-question">
-        <h2 className="title color-bleu">
-          Logiciel de travail ( a changer, pas sur le utiliter )
-        </h2>
+        <h2 className="title color-bleu">Logiciel de travail</h2>
         <MapQuestion />
       </section>
     </>
