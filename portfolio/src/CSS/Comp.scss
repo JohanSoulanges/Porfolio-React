@@ -21,6 +21,7 @@
 }
 
 .dev-container {
+
     grid-area: b;
 
     &>h3 {
@@ -63,7 +64,7 @@
     }
 }
 
-@media screen and (max-width:820px) and (max-height:1180px) {
+@media screen and (max-width:900px)  {
     .expert-container {
         grid-template-columns: 15% 35% 35% 15%;
     }
@@ -76,11 +77,12 @@
         
         &>p {
             margin: 2.5rem 3rem 2.5rem 3rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
         
         &>.bloc {
-            font-size: 1.3rem;
+            font-size: 1rem;
+            line-height: 2;
         }
     }
 
@@ -91,13 +93,13 @@
 
         &>p {
             margin: 2.5rem 3rem 2.5rem 3rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
 
         &>.bloc {
             width: 100%;
             padding-left: 1rem;
-            font-size: 1.3rem;
+            font-size: 1rem;
         }
     }
 }
