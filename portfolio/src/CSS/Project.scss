@@ -331,3 +331,39 @@
             display: none;
        }
 }
+
+@media screen and (max-width:450px) {
+   .catego-container {
+       display: grid;
+       grid-template-columns: 2% 30% 30% 30% 5%;
+       grid-template-rows: 45% 45% ;
+       grid-template-areas: "a b c d h"
+                            "a e f g h";
+       font-size: 1.2rem;
+   }
+
+   .project-container {
+       grid-template-columns: 20% 35% auto;
+
+       &>.project-block {
+           margin: 1rem 0 0 1rem;
+           width: 30vh;
+
+           &>button>h2 {
+               font-size: 1.2rem;
+           }
+
+           &>button>p {
+               font-size: 1rem;
+           }
+       }
+   }
+
+     .nextImg {
+         top: 210rem;
+     }
+
+     .prevImg {
+         top: 210rem;
+     }
+}

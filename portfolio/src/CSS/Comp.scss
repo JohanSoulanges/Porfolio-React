@@ -155,3 +155,29 @@
         }
     }
 }
+
+@media screen and (max-width:450px) {
+    .expert-header {
+        display: block;
+        text-align: center;
+        min-height: 14vh;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .forma-container {
+
+        &>.bloc {
+            padding-left: 0rem;
+            border-left: 3px solid #2f4ace;
+            line-height: 1.5;
+            max-width: 85vw;
+        }
+    }
+
+    .main-container-comp {
+        padding-bottom: 5rem;
+    }
+}
+
