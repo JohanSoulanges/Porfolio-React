@@ -56,13 +56,13 @@
         margin: 1rem 0 0 1rem;
         z-index: 10;
 
-        &>button >h2 {
+        &>a >h2 {
             text-align: center;
             padding: 0 2rem 0 2rem;
             font-size: 1.95rem;
         }
 
-        &>button>p {
+        &>a >p {
             text-align: center;
             padding: 1rem 5rem 1rem 5rem;
             line-height: 1.5;

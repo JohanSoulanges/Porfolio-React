@@ -10,7 +10,7 @@ const Home = () => {
           <div className="home-block">
             <h1 className="title color-bleu">You look for a devellopper</h1>
             <button className="btn">
-              <a href="">Contact me</a>
+              <a href={"#contact"}>Contact me</a>
             </button>
           </div>
         </div>

@@ -20,10 +20,10 @@ const Menu = () => {
         {menuItems.map(({ id, name, desc }, i) => {
           return (
             <div key={id} className={`project-${i} project-block`}>
-              <button onClick={() => selectedProjet(id)}>
+              <a onClick={() => selectedProjet(id)} href={"#show"}>
                 <h2 className="title color-bleu">{name}</h2>
                 <p>{desc}</p>
-              </button>
+              </a>
             </div>
           );
         })}

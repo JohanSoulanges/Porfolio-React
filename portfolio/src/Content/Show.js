@@ -9,7 +9,7 @@ const Show = () => {
   return (
     <>
       {showProjet !== null && (
-        <section className="main-container-show">
+        <section className="main-container-show" id="show">
           <div className="svg-1">
             <svg viewBox="0 0 160 160" x="0px" y="0px">
               <path

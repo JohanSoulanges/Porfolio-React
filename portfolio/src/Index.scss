@@ -19,6 +19,12 @@ button {
     cursor: pointer;
 }
 
+a:visited,
+a {
+    text-decoration: none;
+    color: #2f4ace;
+}
+
 .btn {
     height: 55px;
     width: 150px;
