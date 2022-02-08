@@ -46,12 +46,9 @@ const MapQuestion = () => {
             }
           >
             <p>
-              Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis
-              elementum. Phasellus sed efficitur dolor, et ultricies sapien.
-              Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
-              odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit
-              amet.
+              Les logiciels que j'utilise pour le code sont Visual Studio Code,
+              Photoshop, Abode Premiere Pro, Git Bash, Gitup Desktop, Mongo
+              Compass ou encore Robo 3T.
             </p>
           </div>
         </div>
@@ -82,12 +79,8 @@ const MapQuestion = () => {
             }
           >
             <p>
-              Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis
-              elementum. Phasellus sed efficitur dolor, et ultricies sapien.
-              Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
-              odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit
-              amet.
+              La plus par de me projet sont host sur heroku, mais certain de mes
+              project sont sur netlify.
             </p>
           </div>
         </div>
@@ -156,12 +149,9 @@ const MapQuestion = () => {
             }
           >
             <p>
-              Answer. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis
-              elementum. Phasellus sed efficitur dolor, et ultricies sapien.
-              Quisque fringilla sit amet dolor commodo efficitur. Aliquam et sem
-              odio. In ullamcorper nisi nunc, et molestie ipsum iaculis sit
-              amet.
+              Mon passe-temps favoris est le modèlisme, et pour etre plus précis
+              le gunpla, qui est du modélisme de robot. Je pratique aussi la
+              randonnée en montagne de préférence en groupe ou seul.
             </p>
           </div>
         </div>

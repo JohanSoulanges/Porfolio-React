@@ -1,4 +1,4 @@
-/*
+/* /*
 =============== 
 Variables
 ===============
@@ -298,9 +298,9 @@ Sidebar Styles
   padding: 1rem 1.5rem;
 }
 
-.title {
+/* .title {
   height: 40px;
-}
+} */
 
 .links {
   width: max-content;
@@ -878,4 +878,4 @@ Contact Styles
 
 .info-container > h4:last-child {
   color: yellow;
-}
+} */

@@ -6,9 +6,9 @@ import logoForma from "../images/3534031.png";
 const Comp = () => {
   return (
     <>
-      <section className="main-container-comp">
+      <section className="main-container-comp" id="comp">
         <div className="expert-header">
-          <h2 className="title color-bleu">Mon expertise</h2>
+          <h2 className="title color-bleu">Mon Expertise</h2>
         </div>
         <div className="expert-container">
           <div className="dev-container">
@@ -17,12 +17,14 @@ const Comp = () => {
             </span>
             <h3 className="color-bleu sub-title">Développement</h3>
             <p className="">
-              Exemple de texte. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+              Voici touts les langagues ou frameworks sur les quels j'ai été
+              former ou appris en autodidacte.
             </p>
             <h5 className="color-bleu inf-title">Langague Utiliser :</h5>
             <blockquote className="bloc">
               Html/CSS
+              <br />
+              SASS/SCSS
               <br />
               Javascript
               <br />
@@ -41,12 +43,10 @@ const Comp = () => {
             <span className="icone">
               <img src={logoForma} alt="" />
             </span>
-            <h3 className="color-bleu sub-title">
-              <span>Expériences</span> et Formation
-            </h3>
+            <h3 className="color-bleu sub-title">Expériences et Formation</h3>
             <p className="">
-              Exemple de texte. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit nullam nunc justo sagittis suscipit ultrices.
+              Voivi toutes les formations et expériences que j'ai éffectuer au
+              cours de ma vie.
             </p>
             <h5 className="color-bleu inf-title">Expériences effectuer :</h5>
             <blockquote className="bloc">

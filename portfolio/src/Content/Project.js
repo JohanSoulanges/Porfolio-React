@@ -6,7 +6,7 @@ import Menu from "./Projet/Menu";
 const Project = () => {
   return (
     <>
-      <section className="main-container-projet">
+      <section className="main-container-projet" id="projet">
         <h2 className="title color-bleu">Project</h2>
         <Categories />
         <Menu />

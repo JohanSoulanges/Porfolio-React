@@ -18,7 +18,7 @@ function App() {
       <Question />
       <Contact />
       {/* <Navbar />*/}
-      {/* <Sidebar /> */}
+      <Sidebar />
     </>
   );
 }
