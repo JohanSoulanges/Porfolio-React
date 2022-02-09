@@ -2,10 +2,9 @@ import React from "react";
 import "../CSS/Sidebar.scss";
 import { useGlobalContext } from "../Context/AppContext";
 import { links, social } from "../Database/Data";
-import logo from "../SVG/logo.svg";
 
 const Sidebar = () => {
-  const { isSidebarOpen, setIsSidebarOpen, showSidebar } = useGlobalContext();
+  const { isSidebarOpen, setIsSidebarOpen } = useGlobalContext();
   return (
     <>
       <aside className={isSidebarOpen ? "sidebar show-sidebar" : "sidebar"}>

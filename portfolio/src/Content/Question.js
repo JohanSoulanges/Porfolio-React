@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../CSS/Question.scss";
 import MapQuestion from "./Question/MapQuestion";
 

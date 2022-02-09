@@ -4,7 +4,7 @@ import "../CSS/Show.scss";
 import priviImg from "../images/b0e8ea6c-f26d-a0b2-d308-76430fa686a8.jpg";
 
 const Show = () => {
-  const { showProjet, setshowProjet } = useGlobalContext();
+  const { showProjet } = useGlobalContext();
   console.log(showProjet);
   return (
     <>
@@ -25,7 +25,7 @@ const Show = () => {
             </svg>
           </div>
           <div className="priviImg">
-            <img src={priviImg} />
+            <img src={priviImg} alt={`${showProjet[0].name}`} />
           </div>
           <div className="detail-container">
             <h2 className="title color-bleu"> {showProjet[0].name}</h2>

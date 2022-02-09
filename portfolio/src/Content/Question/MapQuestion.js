@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useGlobalContext } from "../../Context/AppContext";
 // import { question } from "../../Database/Data";
 

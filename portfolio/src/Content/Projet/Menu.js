@@ -30,15 +30,15 @@ const Menu = () => {
       </div>
       {mult === 0 || (
         <button onClick={() => selectMenuPageDown(projet)}>
-          <img className="prevImg" src={prevImg} alt="" />
+          <img className="prevImg" src={prevImg} alt="touche prev" />
         </button>
       )}
       {mult === maxPage - 1 || (
         <button onClick={() => selectMenuPageUp(projet)}>
-          <img className="nextImg" src={nextImg} alt="" />
+          <img className="nextImg" src={nextImg} alt="touche next" />
         </button>
       )}
-      <img src={projetImg} className="project-img" />
+      <img src={projetImg} className="project-img" alt="projet" />
       <div className="svg-background">
         <svg viewBox="0 0 160 150" x="0px" y="0px">
           <path
