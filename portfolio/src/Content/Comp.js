@@ -16,7 +16,7 @@ const Comp = () => {
               <img src={logoDev} alt="" />
             </span>
             <h3 className="color-bleu sub-title">Développement</h3>
-            <p className="">
+            <p>
               Voici touts les langages et frameworks sur lesquels je me suis
               formé :
             </p>
@@ -43,7 +43,7 @@ const Comp = () => {
               <img src={logoForma} alt="" />
             </span>
             <h3 className="color-bleu sub-title">Expériences et Formation</h3>
-            <p className="">
+            <p>
               Voivi toutes les formations et expériences que j'ai éffectué au
               cours de mon parcours :
             </p>

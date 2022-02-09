@@ -40,7 +40,7 @@ const Menu = () => {
       )}
       <img src={projetImg} className="project-img" />
       <div className="svg-background">
-        <svg viewBox="0 0 160 150" x="0px" y="0px" id="svg-7553">
+        <svg viewBox="0 0 160 150" x="0px" y="0px">
           <path
             fill="#2f4ace"
             d="M43.2,126.9c14.2,1.3,27.6,7,39.1,15.6c8.3,6.1,19.4,10.3,32.7,5.3c11.7-4.4,18.6-17.4,21-30.2c2.6-13.3,8.1-25.9,15.7-37.1

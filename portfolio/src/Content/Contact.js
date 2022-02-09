@@ -42,7 +42,6 @@ const Contact = () => {
             viewBox="0 0 160 140"
             x="0px"
             y="0px"
-            id="svg-c4d4"
           >
             <g>
               <g>
@@ -66,7 +65,6 @@ const Contact = () => {
             viewBox="0 0 160 120"
             x="0px"
             y="0px"
-            id="svg-b310"
           >
             <path
               transform="rotate(9.5)"
@@ -120,10 +118,10 @@ const Contact = () => {
               </div>
               {/* <div> */}
               <button className="submit">ENVOYER</button>
-              {/* <a href="#" className="">
+              {/* <a href="#" >
                   Submit
                 </a> */}
-              {/* <input type="submit" defaultValue="submit" className="" /> */}
+              {/* <input type="submit" defaultValue="submit"  /> */}
               {/* </div> */}
               {/* <div className="none">Thank you! Your message has been sent.</div>
               <div className="none">

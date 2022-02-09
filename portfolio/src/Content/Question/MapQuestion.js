@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useGlobalContext } from "../../Context/AppContext";
-import { question } from "../../Database/Data";
+// import { question } from "../../Database/Data";
 
 const MapQuestion = () => {
   const {
@@ -8,8 +8,8 @@ const MapQuestion = () => {
     setIsShowAnswer1,
     isShowAnswer2,
     setIsShowAnswer2,
-    isShowAnswer3,
-    setIsShowAnswer3,
+    // isShowAnswer3,
+    // setIsShowAnswer3,
     isShowAnswer4,
     setIsShowAnswer4,
   } = useGlobalContext();
@@ -25,13 +25,7 @@ const MapQuestion = () => {
               Sur quel logiciel je développe mes projets ?
             </span>
             <span className="fleche svg-arrow-1">
-              <svg
-                className=""
-                viewBox="0 0 16 16"
-                x="0px"
-                y="0px"
-                id="svg-8021"
-              >
+              <svg viewBox="0 0 16 16" x="0px" y="0px">
                 <path
                   fill="#ccd3db"
                   d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
@@ -58,13 +52,7 @@ const MapQuestion = () => {
               Quel service d'hébergement j'utilise ?
             </span>
             <span className="fleche svg-arrow-2">
-              <svg
-                className=""
-                viewBox="0 0 16 16"
-                x="0px"
-                y="0px"
-                id="svg-3470"
-              >
+              <svg viewBox="0 0 16 16" x="0px" y="0px">
                 <path
                   fill="#ccd3db"
                   d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
@@ -92,7 +80,7 @@ const MapQuestion = () => {
             <span className="inf-title">trouver un troisème point ?</span>
             <span className="fleche svg-arrow-3">
               <svg
-                className=""
+                
                 viewBox="0 0 16 16"
                 x="0px"
                 y="0px"
@@ -128,13 +116,7 @@ const MapQuestion = () => {
           >
             <span className="inf-title">Quel sont mes passe-temps ?</span>
             <span className="fleche svg-arrow-4">
-              <svg
-                className=""
-                viewBox="0 0 16 16"
-                x="0px"
-                y="0px"
-                id="svg-e4a1"
-              >
+              <svg viewBox="0 0 16 16" x="0px" y="0px">
                 <path
                   fill="#ccd3db"
                   d="M8,10.7L1.6,5.3c-0.4-0.4-1-0.4-1.3,0c-0.4,0.4-0.4,0.9,0,1.3l7.2,6.1c0.1,0.1,0.4,0.2,0.6,0.2s0.4-0.1,0.6-0.2l7.1-6
