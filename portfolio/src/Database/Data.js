@@ -152,13 +152,13 @@ export const links = [
   {
     id: 3,
     url: "#projet",
-    text: "Project",
+    text: "Projets",
     icon: <GiPapers size={20} />,
   },
   {
     id: 4,
     url: "#about",
-    text: "Question",
+    text: "Questions",
     icon: <GoTasklist size={20} />,
   },
   {

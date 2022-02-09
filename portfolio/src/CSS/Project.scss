@@ -1,5 +1,5 @@
 .main-container-projet {
-    max-height: 100vh;
+    max-height: auto;
     padding-top: 1rem;
     padding-bottom: 10rem;
     &>.title {
@@ -126,14 +126,12 @@
     .project-container {
 
         &>.project-block {
-            &>button>h2 {
+            &>a>h2 {
                 padding: 0rem 1.5rem 0rem 1.5rem;
-                font-size: 1.5rem;
             }
 
-            &>button>p {
+            &>a>p {
                 padding: 1rem 4rem 1rem 4rem;
-                font-size: 0.9rem;
             }
         }
     }
@@ -143,14 +141,12 @@
     .project-container {
         margin-top: 3rem;
         &>.project-block {
-            &>button>h2 {
+            &>a>h2 {
                 padding: 0 2rem 0 2rem;
-                font-size: 1.5rem;
             }
-
-            &>button>p {
+            
+            &>a>p {
                 padding: 0rem 3rem 0rem 3rem;
-                font-size: 0.9rem;
             }
         }
     }
@@ -184,18 +180,19 @@
 
 @media screen and (max-width:1250px) {
     .project-container {
+        grid-template-columns: 50% 20% 20% auto;
         &>.project-block {
             background-color: #e5e5e5;
             margin: 1rem 0 0 1rem;
             z-index: 10;
 
-            &>button>h2 {
+            &>a>h2 {
                 padding: 0 1rem 0 1rem;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
 
-            &>button>p {
-                padding: 1rem 0rem 1rem 0rem;
+            &>a>p {
+                padding: 1rem 0.5rem 1rem 0.5rem;
                 line-height: 1.5;
                 font-size: 1rem;
             }
@@ -217,7 +214,7 @@
 
     .project-img {
         left: 15rem;
-        top: 130rem;
+        top: 125rem;
         width: 60%;
     }
 
@@ -236,39 +233,39 @@
             background-color: #e5e5e5;
             margin: 1rem 0 0 1rem;
 
-            &>button>h2 {
+            &>a>h2 {
                 padding: 0 1rem 0 1rem;
                 font-size: 1.2rem;
             }
 
-            &>button>p {
+            &>a>p {
                 padding: 1rem 0rem 1rem 0rem;
                 font-size: 1rem;
             }
         }
     }
      .nextImg {
-         top: 150rem;
+         top: 140rem;
          width: 5rem;
          height: 5rem;
-         left: 87%;
+         left: 92%;
      }
 
      .prevImg {
-         top: 150rem;
+         top: 140rem;
          width: 5rem;
          height: 5rem;
          left: 3%;
      }
 
      .project-img {
-         top: 140rem;
+         top: 130rem;
          left: 11rem;
          width: 60%;
      }
 
      .svg-background {
-         top: 130rem;
+         top: 120rem;
          left: 10%;
          width: 45rem;
          height: 45rem;
@@ -292,13 +289,13 @@
             background-color: #e5e5e5;
             margin: 1rem 0 0 1rem;
             width: 30vh;
-            &>button>h2 {
+            &>a>h2 {
                 text-align: center;
                 padding: 0 2rem 0 2rem;
                 font-size: 1.95rem;
             }
 
-            &>button>p {
+            &>a>p {
                 text-align: center;
                 padding: 1rem 2rem 1rem 2rem;
                 line-height: 1.5;
@@ -312,7 +309,7 @@
            width: 3rem;
            height: 3rem;
            left: 87%;
-           top: 190rem;
+           top: 160rem;
        }
 
        .prevImg {
@@ -320,7 +317,7 @@
            width: 3rem;
            height: 3rem;
            left: 3%;
-           top: 190rem;
+           top: 160rem;
        }
 
        .project-img {
@@ -349,11 +346,11 @@
            margin: 1rem 0 0 1rem;
            width: 30vh;
 
-           &>button>h2 {
+           &>a>h2 {
                font-size: 1.2rem;
            }
 
-           &>button>p {
+           &>a>p {
                font-size: 1rem;
            }
        }

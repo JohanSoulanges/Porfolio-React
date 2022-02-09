@@ -22,7 +22,7 @@ const MapQuestion = () => {
             onClick={() => setIsShowAnswer1(!isShowAnswer1)}
           >
             <span className="inf-title">
-              Sur quel logiciel j'utilise pour developper mes projects ?
+              Sur quel logiciel je développe mes projets ?
             </span>
             <span className="fleche svg-arrow-1">
               <svg
@@ -55,7 +55,7 @@ const MapQuestion = () => {
         <div className="question-2">
           <a onClick={() => setIsShowAnswer2(!isShowAnswer2)}>
             <span className="inf-title">
-              Sur quel service hosting j'utilise ?
+              Quel service d'hébergement j'utilise ?
             </span>
             <span className="fleche svg-arrow-2">
               <svg
@@ -79,12 +79,12 @@ const MapQuestion = () => {
             }
           >
             <p>
-              La plus par de me projet sont host sur heroku, mais certain de mes
-              project sont sur netlify.
+              La plupart de mes projets son hébergés sur Heroku, mais certain de
+              mes project sont sur Netlify.
             </p>
           </div>
         </div>
-        <div className="question-3">
+        {/* <div className="question-3">
           <a
             className="fleche-question-3"
             onClick={() => setIsShowAnswer3(!isShowAnswer3)}
@@ -120,7 +120,7 @@ const MapQuestion = () => {
               amet.
             </p>
           </div>
-        </div>
+        </div> */}
         <div className="question-4">
           <a
             className="fleche-question-4"
@@ -149,9 +149,10 @@ const MapQuestion = () => {
             }
           >
             <p>
-              Mon passe-temps favoris est le modèlisme, et pour etre plus précis
-              le gunpla, qui est du modélisme de robot. Je pratique aussi la
-              randonnée en montagne de préférence en groupe ou seul.
+              J'ai pour passe-temps le modélisme de robot, le gunpla pour être
+              plus précis. Je pratique aussi la randonnée en montagne de
+              préférence en groupe mais il m'arrive de le pratiquer en
+              solitaire.
             </p>
           </div>
         </div>

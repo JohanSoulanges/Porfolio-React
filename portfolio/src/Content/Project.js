@@ -7,7 +7,7 @@ const Project = () => {
   return (
     <>
       <section className="main-container-projet" id="projet">
-        <h2 className="title color-bleu">Project</h2>
+        <h2 className="title color-bleu">Projet</h2>
         <Categories />
         <Menu />
       </section>

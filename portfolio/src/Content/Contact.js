@@ -1,6 +1,7 @@
 import React from "react";
 import "../CSS/Contact.scss";
 import emailjs from "@emailjs/browser";
+import { social } from "../Database/Data";
 
 const Contact = () => {
   const sendEmail = (e) => {
@@ -77,28 +78,35 @@ const Contact = () => {
         </div>
         <div className="contact-container ">
           <div className="contact-info ">
-            <h2>Contact us</h2>
+            <h2>Contact</h2>
             <p>
-              3045 10 Sunrize Avenue, 123-456-7890
+              Lundi – Vendredi: 9:00 – 20:00
               <br />
-              Mon – Fri: 9:00 am – 8:00 pm,
+              Samedi – Dimanche: 15:00 – 20:00
               <br />
-              Sat – Sun: 9:00 am – 10 pm
-              <br />
-              <a href="" target="_blank">
-                contacts@esbnyc.com
+              <a href="johan.soulanges@gmail.com" target="_blank">
+                johan.soulanges@gmail.com
               </a>
             </p>
+            <ul className="social">
+              {social.map(({ id, url, icon }) => {
+                return (
+                  <li key={id}>
+                    <a href={url}>{icon}</a>
+                  </li>
+                );
+              })}
+            </ul>
           </div>
           <div className="input-container ">
             <form onSubmit={sendEmail}>
               <div className="input input-1">
                 <input type="text" name="name" required />
-                <label>Enter your Name</label>
+                <label>Votre Nom</label>
               </div>
               <div className="input input-2">
                 <input type="email" name="email" required />
-                <label>Enter a valid email address</label>
+                <label>Votre Email</label>
               </div>
               <div className="input textarea">
                 <textarea
@@ -108,10 +116,10 @@ const Contact = () => {
                   required
                   defaultValue={""}
                 />
-                <label className="label-textarea">Enter your message</label>
+                <label className="label-textarea">Votre message</label>
               </div>
               {/* <div> */}
-              <button className="submit">SUBMIT</button>
+              <button className="submit">ENVOYER</button>
               {/* <a href="#" className="">
                   Submit
                 </a> */}

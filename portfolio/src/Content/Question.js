@@ -6,7 +6,7 @@ const Question = () => {
   return (
     <>
       <section className="main-container-question" id="about">
-        <h2 className="title color-bleu">Logiciel de travail</h2>
+        <h2 className="title color-bleu">A propos de moi</h2>
         <MapQuestion />
       </section>
     </>

@@ -11,6 +11,7 @@
     box-shadow: var(--clr-red-dark);
     transition: var(--transition);
     transform: translate(-100%);
+    z-index: 100;
 }
 
 .show-sidebar {

@@ -17,10 +17,9 @@ const Comp = () => {
             </span>
             <h3 className="color-bleu sub-title">Développement</h3>
             <p className="">
-              Voici touts les langagues ou frameworks sur les quels j'ai été
-              former ou appris en autodidacte.
+              Voici touts les langages et frameworks sur lesquels je me suis
+              formé :
             </p>
-            <h5 className="color-bleu inf-title">Langague Utiliser :</h5>
             <blockquote className="bloc">
               Html/CSS
               <br />
@@ -45,26 +44,25 @@ const Comp = () => {
             </span>
             <h3 className="color-bleu sub-title">Expériences et Formation</h3>
             <p className="">
-              Voivi toutes les formations et expériences que j'ai éffectuer au
-              cours de ma vie.
+              Voivi toutes les formations et expériences que j'ai éffectué au
+              cours de mon parcours :
             </p>
-            <h5 className="color-bleu inf-title">Expériences effectuer :</h5>
             <blockquote className="bloc">
               Licence MIPI :<br />
               &nbsp;Initiation au langage informatique PYTHON
               <br />
               <br />
               IFOCOP :<br />
-              Apprentisage du langague Javascript, Angular, React, NodeJS...
+              Apprentisage du langage Javascript, Angular, React, NodeJS...
               <br />
               Perfection du langague HTML et CSS
               <br />
-              Mise en place de divers project
+              Mise en place de divers projets
               <br />
               <br />
               Dyma :<br /> Initiation au langage Javascript, HTML et CSS
               <br />
-              Mise en place de divers project
+              Mise en place de divers projets
               <br />
             </blockquote>
           </div>

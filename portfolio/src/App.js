@@ -1,6 +1,5 @@
 import React from "react";
 import Sidebar from "./Content/Sidebar";
-import Navbar from "./Content/Navbar";
 import Home from "./Content/Home";
 import Comp from "./Content/Comp";
 import Project from "./Content/Project";
@@ -17,7 +16,6 @@ function App() {
       <Show />
       <Question />
       <Contact />
-      {/* <Navbar />*/}
       <Sidebar />
     </>
   );

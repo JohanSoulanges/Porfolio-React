@@ -63,11 +63,11 @@ const Show = () => {
               <p>{showProjet[0].desc}</p>
             </div>
             <div className="tech">
-              <h5 className="mid-title color-bleu">Tech Utiliser</h5>
+              <h5 className="mid-title color-bleu">Tech Utilisé</h5>
               <p>{showProjet[0].desc}</p>
             </div>
             <div className="prob">
-              <h5 className="mid-title color-bleu">Probleme rencontrer</h5>
+              <h5 className="mid-title color-bleu">Problèmes rencontrés</h5>
               <p>{showProjet[0].desc}</p>
             </div>
           </div>

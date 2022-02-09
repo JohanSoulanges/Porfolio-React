@@ -34,6 +34,11 @@
         color: #2f4ace;
     }
 
+    &>.contact-info>.social {
+        display: flex;
+        flex-direction: row;
+    }
+
     &>.input-container {
         margin: 3rem 2rem 1rem 0;
     }
