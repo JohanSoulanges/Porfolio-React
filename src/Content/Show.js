@@ -37,9 +37,9 @@ const Show = () => {
             <button className="btn">
               <a href={showProjet[0].urlGit}>Lien Github</a>
             </button>
-            {showProjet[0].urlweb !== null && (
+            {showProjet[0].urlWeb !== null && (
               <button className="btn">
-                <a href={showProjet[0].urlweb}>Voir Projet</a>
+                <a href={showProjet[0].urlWeb}>Voir Projet</a>
               </button>
             )}
           </div>
@@ -60,15 +60,23 @@ const Show = () => {
           <div className="info-container">
             <div className="client">
               <h5 className="mid-title color-bleu">Demande du client</h5>
-              <p>{showProjet[0].desc}</p>
+              <p>{showProjet[0].client}</p>
             </div>
             <div className="tech">
               <h5 className="mid-title color-bleu">Tech Utilisé</h5>
-              <p>{showProjet[0].desc}</p>
+              <p>
+                {showProjet[0].tech[0] && `Front-end: ${showProjet[0].tech[0]}`}
+                {showProjet[0].tech[0] && <br />}
+                {showProjet[0].tech[1] && `Back-end: ${showProjet[0].tech[1]}`}
+                {showProjet[0].tech[1] && <br />}
+                {showProjet[0].tech[2] && `Librairie: ${showProjet[0].tech[2]}`}
+                {showProjet[0].tech[2] && <br />}
+                {showProjet[0].tech[3] && `Autre: ${showProjet[0].tech[3]}`}
+              </p>
             </div>
             <div className="prob">
               <h5 className="mid-title color-bleu">Problèmes rencontrés</h5>
-              <p>{showProjet[0].desc}</p>
+              <p>{showProjet[0].prob}</p>
             </div>
           </div>
         </section>
