@@ -4,7 +4,6 @@
     left: 0;
     width: 13rem;
     height: fit-content;
-    // background: var(--clr-portfolio-8);
     display: grid;
     grid-template-rows: auto 1fr auto;
     row-gap: 1rem;
@@ -38,16 +37,13 @@
     transition: var(--transition);
     cursor: pointer;
     animation: bounce 2s ease-in-out infinite;
+    & > img {
+        margin-top: 0.3rem;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
 }
-
-// .sidebar-header {
-//     width: max-content;
-//     display: flex;
-//     justify-content: space-between;
-//     align-items: center;
-//     padding: 1rem 1.5rem;
-// }
-
 
 .links {
     width: max-content;
@@ -74,4 +70,9 @@
     padding-right: 1rem;
     margin: 0 0.5rem;
     color: var(--clr-portfolio-10);
+}
+
+.toogle-size {
+    height: 3rem;
+    width: 3rem;
 }

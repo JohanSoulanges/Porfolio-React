@@ -90,7 +90,9 @@ const Contact = () => {
               {social.map(({ id, url, icon }) => {
                 return (
                   <li key={id}>
-                    <a href={url}>{icon}</a>
+                    <a target="_blank" href={url}>
+                      {icon}
+                    </a>
                   </li>
                 );
               })}

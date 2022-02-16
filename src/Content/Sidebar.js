@@ -2,6 +2,8 @@ import React from "react";
 import "../CSS/Sidebar.scss";
 import { useGlobalContext } from "../Context/AppContext";
 import { links, social } from "../Database/Data";
+import nextImg from "../images/1.png";
+import prevImg from "../images/2.png";
 
 const Sidebar = () => {
   const { isSidebarOpen, setIsSidebarOpen } = useGlobalContext();
@@ -13,7 +15,11 @@ const Sidebar = () => {
             className="sidebar-toggle"
             onClick={() => setIsSidebarOpen(!isSidebarOpen)}
           >
-            X
+            {isSidebarOpen ? (
+              <img src={prevImg} alt="nextImg" />
+            ) : (
+              <img src={nextImg} alt="nextImg" />
+            )}
           </button>
         </div>
         <div className="sidebar-content">
@@ -34,7 +40,9 @@ const Sidebar = () => {
             {social.map(({ id, url, icon }) => {
               return (
                 <li key={id}>
-                  <a href={url}>{icon}</a>
+                  <a target="_blank" href={url}>
+                    {icon}
+                  </a>
                 </li>
               );
             })}
