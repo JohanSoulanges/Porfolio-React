@@ -1,5 +1,5 @@
 .main-container-projet {
-    max-height: auto;
+    height: max-content;
     padding-top: 1rem;
     padding-bottom: 10rem;
     &>.title {
@@ -45,6 +45,7 @@
 }
 
 .project-container {
+    height: max-content;
     display: grid;
     grid-template-columns: 50% 18% 18% auto;
     grid-template-areas:
@@ -52,6 +53,7 @@
         "e f g h";
 
     &>.project-block {
+        height: 30vh;
         background-color: #e5e5e5;
         margin: 1rem 0 0 1rem;
         z-index: 10;
