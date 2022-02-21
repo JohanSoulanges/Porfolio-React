@@ -25,7 +25,7 @@ const Show = () => {
             </svg>
           </div>
           <div className="priviImg">
-            <img src={priviImg} alt={`${showProjet[0].name}`} />
+            <img src={showProjet[0].image} alt={`${showProjet[0].name}`} />
           </div>
           <div className="detail-container">
             <h2 className="title color-bleu"> {showProjet[0].name}</h2>
